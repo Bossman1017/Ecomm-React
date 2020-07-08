@@ -7,8 +7,8 @@ class Navbar extends React.Component {
             <div>
                 <div className="container">
                     <nav id="navbar">
-                        <div class="container__nav">
-                            <img class="flaming-logo"
+                        <div className="container__nav">
+                            <img className="flaming-logo"
                                 src="https://cdn10.bigcommerce.com/s-ksslwy/products/3211/images/8351/Blue_flame_new__88263.1582768916.1280.1280.png?c=2"
                                 alt="flamingcontroller" />
 

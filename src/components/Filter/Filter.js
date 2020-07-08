@@ -23,22 +23,22 @@ class Filter extends React.Component {
                 <div className="product__div">
                 <label id="product_filter">Filter By:</label>
                 <select className = "option_1" value = {type} onChange={this.handlePriceDropdownSelect}>
-                    <p></p>
-                    <option > Brand </option>
+                    
+                    <option> Brand </option>
                     <option value="Special"> Bundle Pack</option>
                     <option value="NewSchool"> New </option>
                     <option value="OldSchool">Classic</option>
                     <option value="Consoles">Console</option>
                 </select>
                 <select className= "option_2" value = {price} onChange={this.handlePriceDropdownSelect}>
-                    <p></p>
+                    
                     <option> Price </option>
                     <option value="Low"> Low </option>
                     <option value="Medium">Medium</option>
                     <option value="High">High</option>
                     </select>
                     </div>
-                    {Data.map((item) => {
+                    {Data.map((item) => { 
           if (type === 'default' &&  price === 'default') {
             return <ProductBody item={item}/>
           } else if (type === item.type && price === item.price) {
@@ -46,7 +46,7 @@ class Filter extends React.Component {
           } else if (type === item.type || price === item.price) {
             return <ProductBody item={item} />
           } 
-          
+        
         })}
             </div>
         )
